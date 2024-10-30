@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         buttonAdd = findViewById(R.id.buttonAdd)
 
         setSupportActionBar(toolbar)
-        toolbar.title = getString(R.string.catalog_of_users)
+        title = getString(R.string.catalog_of_users)
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, usersList)
         listView.adapter = adapter
